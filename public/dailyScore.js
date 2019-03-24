@@ -7,14 +7,14 @@ var chart = new Chart(ctx, {
     data: {
         labels: ['completed', 'unfinished'],
         datasets: [{
-            label: 'My First dataset',
+            // label: 'My First dataset',
             backgroundColor: [
-              'rgb(71, 95, 255)',
-              'rgb(255, 233, 0)'
+              'rgb(114, 135, 255)',
+              'rgb(219, 219, 219)'
             ],
             borderColor: [
-              'rgb(71, 95, 255)',
-              'rgb(255, 233, 0)'
+              'rgb(114, 135, 255)',
+              'rgb(219, 219, 219)'
             ],
             data: [80, 20],
         }]

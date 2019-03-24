@@ -15,8 +15,8 @@ var chart = new Chart(ctx, {
     data: {
         datasets: [{
             label: 'Sips Reached of Daily Goal',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
+            backgroundColor: 'rgb(255, 168, 114)',
+            borderColor: 'rgb(255, 168, 114)',
             data: [currentSipIntake],
           }]
     },
