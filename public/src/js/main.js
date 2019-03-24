@@ -8,7 +8,7 @@ var config = {
   messagingSenderId: "376106298401"
 };
 firebase.initializeApp(config);
-
+console.log('h');
 let provider = new firebase.auth.GoogleAuthProvider();
 
 let writeDrinkData = (userId, name, email, drinks) => {
