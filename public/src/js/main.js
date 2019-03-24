@@ -20,6 +20,7 @@ let writeDrinkData = (userId, name, email, drinks) => {
 };
 let sipCountRef = firebase.database().ref('users/5ormm86FPpRAygO0HrsuDw3SBci2');
 sipCountRef.on('value', (snapshot) => {
+    console.log('n');
     console.log(snapshot.val().sips);
 });
 
