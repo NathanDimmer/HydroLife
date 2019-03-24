@@ -8,7 +8,7 @@ var config = {
   messagingSenderId: "376106298401"
 };
 firebase.initializeApp(config);
-console.log('h');
+// console.log('h');
 let provider = new firebase.auth.GoogleAuthProvider();
 
 let writeDrinkData = (userId, name, email, drinks) => {
@@ -23,8 +23,7 @@ sipCountRef.on('value', (snapshot) => {
     console.log('n');
     console.log(snapshot.val().sips);
 });
-
-firebase.auth().signInWithPopup(provider).then(function(result) {
+let signIn = firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
@@ -44,3 +43,5 @@ firebase.auth().signInWithPopup(provider).then(function(result) {
   var credential = error.credential;
   // .
 });
+
+// $('#login-button').on('click', signIn);
