@@ -1,9 +1,9 @@
 // replace these static values
-let dailyWaterGoal = 500;
-let currentWaterIntake = 230;
+let dailySipGoal = 16;
+let currentSipIntake = 10;
 
 function toLitres(value){
-  return (value) + " ml";
+  return (value) + " sips";
 }
 
 var ctx = document.getElementById('goalBar').getContext('2d');
@@ -14,10 +14,10 @@ var chart = new Chart(ctx, {
     // The data for our dataset
     data: {
         datasets: [{
-            label: 'mL Reached of Daily Goal',
+            label: 'Sips Reached of Daily Goal',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [currentWaterIntake],
+            data: [currentSipIntake],
           }]
     },
 
@@ -27,7 +27,7 @@ var chart = new Chart(ctx, {
         xAxes: [{
           ticks: {
             beginAtZero: true,
-            max: dailyWaterGoal,
+            max: dailySipGoal,
             callback: function(value, index, values) {
               return toLitres(value);
             }
