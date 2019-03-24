@@ -7,7 +7,7 @@
 body {
     /*height: 100%;
     width: 100%;*/
-    background-image: linear-gradient(#6999bb 10%,#cee5f2 90%);
+    background-image: linear-gradient(#6999bb,#cee5f2);
 }
 
 .homeButton {
@@ -59,4 +59,49 @@ html {
 
 .column2 {
     padding: 0px;
+}
+
+.nav {
+    height: 30px;
+    width: 100%;
+}
+
+.fa-cog {
+    font-size: 25px;
+    margin: 5px;
+    color: #192b4b;
+}
+
+.logoutButton {
+    font-size: 20px;
+    padding: 5px;
+    color: #192b4b;
+    float: right;
+    text-align: right;
+}
+
+.info {
+    background-color: #ebf3ff29;
+    box-shadow: 0px 0px 6px #ebf3ff29;
+    border-radius: 10px;
+
+}
+
+.column2 {
+    background-color: #ebf3ff29;
+    box-shadow: 0px 0px 6px #ebf3ff29;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.fivePad {
+    padding: 5px;
+}
+
+@media only screen and (min-width: 720px){
+ 
+    .info {
+        margin-right: 5%;
+    }
+     
 }
