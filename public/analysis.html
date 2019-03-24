@@ -46,12 +46,15 @@
                         </div>
                         <div class="row fivePad">
                             Goal Bar
+                            <div class="container">
+                            <canvas id="goalBar"></canvas>
+                          </div>
                         </div>
                         <div class="row fivePad">
                             Daily Score
                             <div class="container">
-            <canvas id="myChart"></canvas>
-          </div>
+                            <canvas id="dailyScoreChart"></canvas>
+                          </div>
                         </div>
                     </div>
 
@@ -65,6 +68,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./dailyScoreChart.js"></script>
+        <script src="./goalBar.js"></script>
+
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
