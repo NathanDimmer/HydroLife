@@ -8,8 +8,12 @@ var config = {
   messagingSenderId: "376106298401"
 };
 firebase.initializeApp(config);
-// console.log('h');
-let provider = new firebase.auth.GoogleAuthProvider();
+let provider;
+$('#login-button').on('click', () => {
+  provider = new firebase.auth.GoogleAuthProvider();
+  signIn();
+});
+// let provider = new firebase.auth.GoogleAuthProvider();
 
 let writeDrinkData = (userId, name, email, drinks) => {
   firebase.database().ref('users/' + userId).set({
@@ -20,17 +24,25 @@ let writeDrinkData = (userId, name, email, drinks) => {
 };
 let sipCountRef = firebase.database().ref('users/5ormm86FPpRAygO0HrsuDw3SBci2');
 sipCountRef.on('value', (snapshot) => {
-    console.log('n');
     console.log(snapshot.val().sips);
+    $("#sipsToday").html(snapshot.val().sips);
 });
-let signIn = firebase.auth().signInWithPopup(provider).then(function(result) {
+
+let signIn = () => { firebase.auth().signInWithPopup(provider).then(function(result) {
   // This gives you a Google Access Token. You can use it to access the Google API.
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  //console.log(user);
+  console.log(user);
 
-  writeDrinkData(user.uid, user.displayName, user.email, 5);
+   writeDrinkData(user.uid, user.displayName, user.email, 7);
+
+  window.location = 'analysis.html';
+  sipCountRef.on('value', (snapshot) => {
+      console.log(snapshot.val().sips);
+      $("#sipsToday").html(snapshot.val().sips);
+  });
+  //$("#sipsToday").html(snapshot.val().sips);
 
   // ...
 }).catch(function(error) {
@@ -42,6 +54,5 @@ let signIn = firebase.auth().signInWithPopup(provider).then(function(result) {
   // The firebase.auth.AuthCredential type that was used.
   var credential = error.credential;
   // .
-});
-
-// $('#login-button').on('click', signIn);
+  });
+};
