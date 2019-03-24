@@ -7,7 +7,7 @@
 body {
     /*height: 100%;
     width: 100%;*/
-    background-image: linear-gradient(#accbe1 10%,#cee5f2 90%);
+    background-image: linear-gradient(#6999bb 10%,#cee5f2 90%);
 }
 
 .homeButton {
@@ -54,9 +54,9 @@ html {
 }
 
 .scrollArrow {
-    float: left;
+    float: right;
 }
 
-.scroll {
-    float: left;
+.column2 {
+    padding: 0px;
 }
