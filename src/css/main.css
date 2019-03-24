@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h2 {
+  font-size: 20px;
+}
+ul.navbar {
+  padding: 15px 16px;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+li a {
+  text-align: right;
+
+  float: left;
+  padding: 2px 16px;
+  display: block;
+  text-decoration: none;
+}
+/* li a:hover {
+  background-color: #d9e5f9;
+} */
