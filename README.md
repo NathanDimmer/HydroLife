@@ -1,6 +1,6 @@
->:warning This is a Hackathon entry for Massey Hacks 5, and was created in under 24 hours. The code in this repo is likely to be hacky and potentially unstable/insecure, so please be careful if forking this repo. You can view the project's Devpost page [here](https://devpost.com/software/hydrolife).
+>:warning: This is a Hackathon entry for Massey Hacks 5, and was created in under 24 hours. The code in this repo is likely to be hacky and potentially unstable/insecure, so please be careful if forking this repo. You can view the project's Devpost page [here](https://devpost.com/software/hydrolife).
 
->:trophy HydroLife won Best IoT Hack Using a Qualcomm Device at Massey Hacks 5!
+>:trophy: HydroLife won Best IoT Hack Using a Qualcomm Device at Massey Hacks 5!
 
 Inspiration
 ----
